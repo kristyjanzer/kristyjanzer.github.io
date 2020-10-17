@@ -87,6 +87,9 @@ h1, h2, h3, h4, h5, h6
 	position: relative
 	&__wrap
 		padding-top: 30px
+		display: flex
+		justify-content: space-between
+		align-items: center
 	&__sign-in
 		img
 			max-width: 152px
@@ -95,7 +98,6 @@ h1, h2, h3, h4, h5, h6
 		padding-top: 75px
 	&__item
 		z-index: 2
-		position: relative
 	&__title-img
 		img
 			max-width: 550px
@@ -128,11 +130,6 @@ h1, h2, h3, h4, h5, h6
 			max-width: 280px
 			width: 100%
 
-.wrapper
-	display: flex
-	justify-content: space-between
-	align-items: center
-
 .logo
 	img
 		max-width: 170px
@@ -151,6 +148,43 @@ h1, h2, h3, h4, h5, h6
 			font-size: 16px
 			&:hover
 				color: $accent
+
+
+.choice
+	background: linear-gradient(357.43deg, rgba(0, 0, 0, 0) 67.74%, rgba(0, 0, 0, 0.88) 87.84%), #090000
+	&__title
+		display: flex
+		align-items: center
+		justify-content: center
+		z-index: 2
+		&-img
+			img
+				max-width: 650px
+				width: 100%
+		&-bg
+			position: absolute
+			z-index: 1
+			left: 50%
+			bottom: -30px
+			margin-left: -125px
+			img
+				max-width: 250px
+				width: 100%
+	&__wrap
+		position: relative
+		z-index: 2
+		display: flex
+		justify-content: center
+		align-items: center
+	&__slider
+		background-image: url(../img/border-slider.png)
+		background-repeat: no-repeat
+		background-position: center
+		background-size: 95% 75%
+		height: 575px
+		z-index: 2
+		position: relative
+		top: -75px
 
 
 
