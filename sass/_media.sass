@@ -64,6 +64,16 @@
 			bottom: -50px
 			font-size: 70px
 			line-height: 50px
+
+	.play
+		background-position: 35% 100%
+
+	.footer 
+		.menu__list-item:not(:last-child)
+			margin-right: 110px
+		&__item
+			&:not(:last-child)
+				margin-right: 25px
 			
 
 @media (min-width: 1500px)
@@ -137,6 +147,29 @@
 			font-size: 22px
 			width: 300px
 
+	.footer
+		&__title
+			font-size: 22px
+		// &__item:nth-child(1)
+		// 	margin-right: 12%
+		// &__item:nth-child(2)
+		// 	margin-right: 7%
+		&__list
+			margin-top: 53px
+			&-link
+				font-size: 22px
+				img
+					width: 40px
+					height: 40px
+					margin-right: 33px
+		&__links a
+			font-size: 22px
+	.icon
+		&:not(:last-child)
+			margin-right: 27px
+		img
+			width: 40px
+			height: 40px
 
 
 @media (min-width: 1700px)
@@ -193,10 +226,22 @@
 			height: 875px
 			top: -110px
 
-	// .play
-	// 	min-height: 2000px
-
 	.ball
 		&__text
 			font-size: 24px
 			width: 300px
+
+	.footer 
+		.menu__list-item:not(:last-child)
+			margin-right: 330px
+		&__title
+			font-size: 24px
+		// &__item:nth-child(1)
+		// 	margin-right: 16%
+		// &__item:nth-child(2)
+		// 	margin-right: 10%
+		&__list
+			&-link
+				font-size: 24px
+		&__links a
+			font-size: 24px

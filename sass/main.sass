@@ -134,6 +134,7 @@ h1, h2, h3, h4, h5, h6
 		width: 100%
 
 .logo
+	cursor: pointer
 	img
 		max-width: 170px
 		width: 100%
@@ -252,6 +253,76 @@ h1, h2, h3, h4, h5, h6
 	width: 100%
 
 
+
+.footer
+	background: #000000
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.menu
+		&__list
+			&-item
+				&:not(:last-child)
+					margin-right: 217px
+	&__items
+		margin-top: 90px
+		display: flex
+		justify-content: space-between
+	// &__item
+	// 	&:nth-child(1)
+	// 		margin-right: 20%
+	// 	&:nth-child(2)
+	// 		margin-right: 15%
+	&__title
+		color: #ADADAD
+		font-family: $default-font, sans-serif
+		font-weight: 600
+		font-size: 16px
+		line-height: 20px
+	&__list
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+		margin-top: 25px
+		&-item
+			display: flex
+			align-items: center
+			&:not(:last-child)
+				margin-bottom: 15px
+		&-link
+			color: #ADADAD
+			display: flex
+			justify-content: center
+			align-items: center
+			font-size: 16px
+			img
+				width: 30px
+				height: 30px
+				margin-right: 15px
+	&__links
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		padding: 70px 0 30px
+		text-align: center
+		a
+			color: #ADADAD
+			font-family: $default-font, sans-serif
+			font-weight: 600
+			font-size: 16px
+			padding: 0 10px
+
+.icons
+	margin-top: 25px
+.icon
+	display: inline-block
+	&:not(:last-child)
+		margin-right: 5px
+	img
+		width: 30px
+		height: 30px
 
 
 @import "media" // Always at the end
